@@ -13,52 +13,27 @@ html
 }
 
 body{
-    /*
-    background-color: #C3CEDA;
-    background-image: url('Pictures/Background.jpg');
-    background-blend-mode:overlay;
-    background-size: 100%;
-    */
     margin: 0px;
     margin-top: -16px;
 }
-/* 
-section{
 
-
-    background-color: #738FA7;
-    /*
-    margin-right: 160px;
-    margin-left: 160px; 
-    background-image: url('../Pictures/Leaves1.jpg');
-    background-blend-mode:luminosity;
-    background-size: 100%;
-    * /
-    border-radius: 10px;
-    
-
-}
-
-*/
 main{
 
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 2vw;
+    margin-right: 2vw;
 
 }
 
 h1 {
+    margin-left: 4vw;
     color: #ffffff;
-    background-color: #0C4161;
     font-size: 24px;
     line-height: 26px;
     font-weight: 600;
     text-decoration-line:none;
     text-transform: uppercase;
 
-    border-style:solid;
-    border-color: #000000;
-    border-width: 2px;
+
 
 }
 
@@ -99,31 +74,12 @@ footer{
 
 nav {
     margin-left: -42px;
-
-
-    /*
-    background-color: #738FA7;
-    color: #070750;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 300;
-
-    border-style: solid;
+    background-color: #0C4161;
+    border-style:solid;
     border-color: #000000;
     border-width: 2px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 0;
-    */
+    height: 15vh;
 
-
-    /*
-    margin-left: -15px;
-    padding-left: 25px;
-
-    margin-right: 25px;
-    margin-left: 25px;
-    */ 
 }
 a {
     color: #ffffff;
