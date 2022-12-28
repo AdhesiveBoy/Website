@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lander Wesenbeek</title>
+    <link rel="stylesheet" href="../Styles/MainStyle.css" />
+    
+</head>
+<body>
+    <h1>
+        <a href= "../index.html" style = "color: #071330; text-decoration-line:none;"> Lander Wesenbeek</a>
+        <nav>
+            <ul>
+                <li>
+                    <p class="nav-boxes">
+                    <a href="AboutMe.html" style = "color: #071330;"> - AboutMe</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="nav-boxes">
+                    <a href="Portfolio.html" style = "color: #071330;"> - Porfolio</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="nav-boxes">
+                    <a href="WerkPlekken.html" style = "color: #071330;"> - WerkPlekken</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="nav-boxes">
+                    <a href="Contacteren.html" style = "color: #071330;"> - Contacteren</a>
+                    </p>
+                </li>
+            </ul>
+        </nav>
+    </h1>
+
+    <main role="main">
+        <section>
+
+            <h2>
+                Mij Contacteren
+            </h2>
+
+            <p class="main-section main-text-style" style = "height: 300px; width: 500px; margin: auto; margin-top: 150px; text-align: center;" >
+                <br>Full name <input type="text" id="name" name="full name" >
+                <br>    
+                <br>Contact email <input type="email" id="email" name="email">
+                <br>
+                <br>Reason <input type="text" id="reason" name="reason">
+                <br><button id="sent" onclick="SentContact();" style="width: 100px; height: 30px; margin-top: 30px">Sent</button>
+            </p>
+
+
+        </section>
+        <footer style="margin-top: 100px;">
+            Copy right is none excistance. <br />
+            So not copyrighted by "LanderElectronicVirtualSoftwareEngenieringArtsIndustries.co ware .inc" <br />
+            contact: r0781198@student.thomasmore.be
+        </footer>   
+    </main>
+
+
+
+
+    <script>
+        function SentContact() {
+            var name = document.getElementById("name");
+            name.innerHTML = "";
+
+            var email = document.getElementById("email");
+            email.innerHTML = "";
+
+            const reason = document.getElementById("reason");
+            reason.innerHTML = null;
+        }
+    </script>
+</body>
