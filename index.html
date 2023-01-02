@@ -12,28 +12,32 @@
     <nav>
         <a href= "index.html" style = "color: #071330; text-decoration-line:none;"> <h1>Lander Wesenbeek</h1></a>
 
-        <ul>
-            <li>
-                <p class="nav-boxes">
-                <a href="SubSites/AboutMe.html" style = "color: #071330;"> - AboutMe</a>
-                </p>
-            </li>
-            <li>
-                <p class="nav-boxes">
-                <a href="SubSites/Portfolio.html" style = "color: #071330;"> - Porfolio</a>
-                </p>
-            </li>
-            <li>
-                <p class="nav-boxes">
-                <a href="SubSites/WerkPlekken.html" style = "color: #071330;"> - WerkPlekken</a>
-                </p>
-            </li>
-            <li>
-                <p class="nav-boxes">
-                <a href="SubSites/Contacteren.html" style = "color: #071330;"> - Contacteren</a>
-                </p>
-            </li>
-        </ul>
+        <button type="button" class="collapsible">Open Collapsible</button>
+
+        <div class="content">
+            <ul>
+                <li>
+                    <p class="nav-boxes">
+                        <a href="SubSites/AboutMe.html" style = "color: #071330;"> - AboutMe</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="nav-boxes">
+                        <a href="SubSites/Portfolio.html" style = "color: #071330;"> - Porfolio</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="nav-boxes">
+                        <a href="SubSites/WerkPlekken.html" style = "color: #071330;"> - WerkPlekken</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="nav-boxes">
+                        <a href="SubSites/Contacteren.html" style = "color: #071330;"> - Contacteren</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
     </nav>
 
 
@@ -47,15 +51,8 @@
                 Welcom Page
             </h2>
 
-            <aside class="float-class">
-                <img src="Pictures/Me.png" alt="angle" style = "width:  436px;"/>
-                <p class="main-border main-text-style" style = "width: 436px; height: 100px;">
-                    -la me-
-                </p>
-            </aside>
 
-
-            <div class="main-section">
+            <div class="main-section colum1">
                 <h3 class="main-border">
                     Welkom hier op mijn amateurische website
                 </h3>
@@ -71,15 +68,38 @@
                 </p>
             </div>
 
+            <aside class="colum2">
+                <img src="Pictures/Me.png" alt="angle"/>
+                <p class="main-border main-text-style">
+                    -la me-
+                </p>
+            </aside>
+
 
         </section>
+
         <!-- remember this is comment-->
         <footer>
+
             Copy right is none excistance. <br />
-            So not copyrighted by "LanderElectronicVirtualSoftwareEngenieringArtsIndustries.co ware .inc" <br />
+            So not copyrighted by "LanderElectronicVirtual SoftwareEngenieringArtsIndustries.co ware .inc" <br />
             contact: r0781198@student.thomasmore.be
         </footer>
     </main>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+
+    coll[0].addEventListener("click", function() {
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+
+</script>
 
 
 </body>
