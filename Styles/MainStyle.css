@@ -25,15 +25,13 @@ main{
 }
 
 h1 {
-    margin-left: 4vw;
+    margin-left: 2vw;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 4vh;
     line-height: 26px;
     font-weight: 600;
     text-decoration-line:none;
     text-transform: uppercase;
-
-
 
 }
 
@@ -42,7 +40,7 @@ h2{
 
     text-align: center;
 
-    font-size: 40px;
+    font-size: 6vh;
 
     margin: 25px 0px 25px
 }
@@ -50,8 +48,8 @@ h2{
 h3{
     color: #ffffff;
     background-color: #071330;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 3vh;
+    line-height: 4vh;
     font-weight: normal;   
 
 }
@@ -60,7 +58,6 @@ p {
 
 
     color: #070750;
-    font-size: 14px;
     line-height: 20px;
     color:#ffffff;
     font-weight: 300;
@@ -73,11 +70,11 @@ footer{
 }
 
 nav {
-    margin-left: -42px;
+    margin-left: 0vw;
     background-color: #0C4161;
     border-style:solid;
     border-color: #000000;
-    border-width: 2px;
+    border-width: 0.5vh;
     height-min: 10vh;
 
     posistion: fixed;
@@ -90,7 +87,7 @@ a {
 
 img{
     border-style: solid;
-    border-width: 4px;
+    border-width: 0.5vh;
     border-color: #071330;
 }
 
@@ -104,7 +101,7 @@ aside{
 
 .main-border{
     border-style: solid;
-    border-width: 5px;
+    border-width: 0.5vh;
     border-color: #000000;
 
     padding: 1vh 1vw ;
@@ -113,8 +110,8 @@ aside{
 .main-text-style{
     background-color: #0C4160;
     border-color: #000000;
-    font-size: large;
-    line-height: 27px;
+    font-size: 2.5vh;
+    line-height: 4vh;
     font-family:Georgia, 'Times New Roman', Times, serif;
     height: auto;
 
@@ -169,7 +166,7 @@ li{
 }
 
 .content{
-    display: block;
+    margin-left: -3vw;
 }
 .collapsible{
     display: none;
@@ -180,6 +177,7 @@ li{
     h1{
         margin: 2vh 15vw 0vw;
         padding: 1vh;
+        font-size: 3vh;
     }
 
     main{
