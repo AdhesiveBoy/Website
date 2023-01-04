@@ -14,7 +14,7 @@ html
 
 body{
     margin: 0px;
-    margin-top: -16px;
+    margin-top: -3vh;
 }
 
 main{
@@ -28,7 +28,7 @@ h1 {
     margin-left: 2vw;
     color: #ffffff;
     font-size: 4vh;
-    line-height: 26px;
+    line-height: 4vh;
     font-weight: 600;
     text-decoration-line:none;
     text-transform: uppercase;
@@ -42,7 +42,7 @@ h2{
 
     font-size: 6vh;
 
-    margin: 25px 0px 25px
+    margin: 4vh 0px 4vh
 }
 
 h3{
@@ -58,7 +58,7 @@ p {
 
 
     color: #070750;
-    line-height: 20px;
+    line-height: 3vh;
     color:#ffffff;
     font-weight: 300;
 
@@ -72,7 +72,6 @@ footer{
 }
 
 nav {
-    margin-left: 0vw;
     background-color: #0C4161;
     border-style:solid;
     border-color: #000000;
@@ -163,7 +162,7 @@ td{
     margin-left: 5vw;
 }
 
-nav >div> ul > li > p > a{
+nav >div > a{
     color: #071330;
     text-decoration-line:none;
     font-size: 2.5vh;
@@ -176,16 +175,18 @@ li{
 }
 
 .content{
-    margin-left: -3vw;
+    margin-left: -0.5vw;
 }
 .collapsible{
+    max-height: 4vh;
     display: none;
+    font-size: 2vh;
 }
 
 @media screen and (max-width: 500px){
 
     h1{
-        margin: 2vh 15vw 0vw;
+        margin: 2vh 2vw 0vw;
         padding: 1vh;
         font-size: 3vh;
     }
@@ -212,8 +213,9 @@ li{
         max-width: 80vw;
     }
     .nav-boxes{
-        float: none;
-
+        float: left;
+        width: 40vw;
+        margin-right: 50vw;
         background: #bdd2e4;
         border-color: black;
     }
@@ -223,6 +225,10 @@ li{
     }
     .collapsible{
         display: block;
+        background: #bdd2e4;
+        border-color: #070750;
+        border-style: solid;
+        border-radius: 1vw;
     }
 
 
