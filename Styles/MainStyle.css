@@ -55,14 +55,14 @@ h3{
 }
 
 p {
-
-
     color: #070750;
     line-height: 3vh;
     color:#ffffff;
     font-weight: 300;
+}
 
-
+input{
+    font-size: 3vh;
 }
 
 footer{

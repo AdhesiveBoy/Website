@@ -7,73 +7,81 @@
     <title>AboutMe</title>
     <link rel="stylesheet" href="../Styles/MainStyle.css" />
 </head>
-<h1>
-    <a href= "../index.html" style = "color: #071330; text-decoration-line:none;"> Lander Wesenbeek</a>
+<body>
     <nav>
-        <ul>
-            <li>
-                <p class="nav-boxes">
-                <a href="AboutMe.html" style = "color: #071330;"> - AboutMe</a>
-                </p>
-            </li>
-            <li>
-                <p class="nav-boxes">
-                <a href="Portfolio.html" style = "color: #071330;"> - Porfolio</a>
-                </p>
-            </li>
-            <li>
-                <p class="nav-boxes">
-                <a href="WerkPlekken.html" style = "color: #071330;"> - WerkPlekken</a>
-                </p>
-            </li>
-            <li>
-                <p class="nav-boxes">
-                <a href="Contacteren.html" style = "color: #071330;"> - Contacteren</a>
-                </p>
-            </li>
-        </ul>
+        <a href= "../index.html" style = "color: #071330; text-decoration-line:none;"> <h1>Lander Wesenbeek</h1></a>
+
+        <button type="button" class="collapsible">Open Navigation</button>
+
+        <div class="content">
+
+            <a href="../SubSites/AboutMe.html" class="nav-boxes"> -AboutMe</a>
+
+            <a href="../SubSites/Portfolio.html" class="nav-boxes"> -Porfolio</a>
+
+            <a href="../SubSites/WerkPlekken.html" class="nav-boxes"> -WerkPlekken</a>
+
+            <a href="../SubSites/Contacteren.html" class="nav-boxes"> -Contacteren</a>
+
+        </div>
     </nav>
-</h1>
-<main>
-    <section>
+    <main role = "main">
+        <section>
 
-        <h2>
-           Me
-        </h2>
+            <h2>
+                Me
+            </h2>
 
-        <aside class="float-class">
-            <img src="../Pictures/Me.png" alt="me"style = "width:  366px;" />
-            <p class="main-section main-text-style" style = "width: 366px; height: 100;">
+
+            <div class="main-section colum1">
+                <p class="main-border main-text-style"  >
+                    Hallo, ik ben een student aan ThomasMore Sint-Andries.
+                    <br>Ik doe de richting graduaat programeren. (<a href="https://www.thomasmore.be/opleidingen/graduaat/programmeren-dag-avondonderwijs/programmeren-dagonderwijs/antwerpen-0" style = "text-decoration-line:underline">https://www.thomasmore.be/...</a>)
+                    <br>
+                    <br>Mijn hobby gaat vooral over games.
+                    <br>Door mijn interesse in games heb ik leren coderen om mijn kleine projecten te maken
+                    <br>en zo mijn liefde ontdekt voor coderen.
+                    <br>(Meer informatie over mijn projecten is op de tab portfolio te zien)
+                    <br>
+                    <br>Ik ben wel niet zo actief in sociale event,
+                    <br>wel iets dat ik actief probeer te verbeteren.
+                    <br>Momenteel ben ik lid van de studentenvereniging "Mytica".
+                    <br>Heb een fijne dag.
+                </p>
+                <p class="main-border main-text-style"  >
+                    Mijn CV (<a href = "../Docs/CV.pdf" download> download CV </a>)
+                </p>
+            </div>
+
+        </section>
+
+        <aside class="colum2">
+            <img src="../Pictures/Me.png" alt="me"/>
+            <p class="main-border main-text-style">
                 -la me-
             </p>
-        </aside> 
+        </aside>
+        <footer>
+            Copy right is none excistance. <br />
+            So not copyrighted by "LanderElectronicVirtualSoftwareEngenieringArtsIndustries.co ware .inc" <br />
+            contact: r0781198@student.thomasmore.be
+        </footer>
 
-        <p class="main-section main-text-style" style = "height: 360px; width: 1050px" >
-                Hallo, ik ben een student aan ThomasMore Sint-Andries.
-            <br>Ik doe de richting graduaat programeren. (<a href="https://www.thomasmore.be/opleidingen/graduaat/programmeren-dag-avondonderwijs/programmeren-dagonderwijs/antwerpen-0" style = "text-decoration-line:underline">https://www.thomasmore.be/...</a>)
-            <br>
-            <br>Mijn hobby gaat vooral over games.
-            <br>Door mijn interesse in games heb ik leren coderen om mijn kleine projecten te maken 
-            <br>en zo mijn liefde ontdekt voor coderen.
-            <br>(Meer informatie over mijn projecten is op de tab portfolio te zien)
-            <br>
-            <br>Ik ben wel niet zo actief in sociale event, 
-            <br>wel iets dat ik actief probeer te verbeteren.
-            <br>Momenteel ben ik lid van de studentenvereniging "Mytica".
-            <br>Heb een fijne dag.
-        </p>
-        <p class="main-section main-text-style" style = "height: 60px; padding: 15px; width: 1050px" >
-            Mijn CV (<a href = "../Docs/CV.pdf" download> download CV </a>)
-        </p>
-
-    </section>
-    <footer>
-        Copy right is none excistance. <br />
-        So not copyrighted by "LanderElectronicVirtualSoftwareEngenieringArtsIndustries.co ware .inc" <br />
-        contact: r0781198@student.thomasmore.be
-    </footer>  
-
-</main>
+    </main>
 
 
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+
+    coll[0].addEventListener("click", function() {
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+
+</script>
+</body>
 </html>
