@@ -33,14 +33,14 @@
             <h2>
                 Mij Contacteren
             </h2>
-            <div class="main-section colum1" style="margin: 20vh 32vw 0vh">
-                <p class=" main-border main-text-style" style = "height: 37vh; width: 30vw; text-align: center;" >
+            <div class="main-section inputColum" >
+                <p class=" main-border main-text-style" style = "text-align: center;" >
                     <br>Full name <input type="text" id="name" name="full name" >
                     <br>
                     <br>Contact email <input type="email" id="email" name="email">
                     <br>
                     <br>Reason <input type="text" id="reason" name="reason">
-                    <br><button id="sent" onclick="SentContact();" class="collapsible"  style="display: block; margin: 3vh 12vw">Sent</button>
+                    <br><button id="sent" onclick="SentContact();" class="sent">Sent</button>
                 </p>
             </div>
         </section>
@@ -56,6 +56,20 @@
 
 
     <script>
+        var coll = document.getElementsByClassName("collapsible");
+
+        coll[0].addEventListener("click", function() {
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+
+        coll[1].addEventListener("click", SentContact());
+
+
         function SentContact() {
             var name = document.getElementById("name");
             name.innerHTML = "";

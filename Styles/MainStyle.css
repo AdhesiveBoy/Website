@@ -61,10 +61,6 @@ p {
     font-weight: 300;
 }
 
-input{
-    font-size: 3vh;
-}
-
 footer{
     color: #683900bb;
     font-size: 2.5vh;
@@ -75,7 +71,7 @@ nav {
     background-color: #0C4161;
     border-style:solid;
     border-color: #000000;
-    border-width: 0.5vh;
+    border-width: 0.3vh;
     height-min: 10vh;
 
     posistion: fixed;
@@ -128,7 +124,7 @@ aside{
     width: 10vw;
     height: 4vh;
     background-color: #0C416130;
-
+    padding-top: 0.5vh;
     margin-top: 0px;
     margin-bottom: 0px;
 
@@ -174,13 +170,34 @@ li{
 
 }
 
+input{
+    font-size: 3vh;
+    height: 4vh;
+    border-width: 0.5vh;
+}
+
+.inputColum{
+    width: 32vw;
+    margin: 20vh 32vw 0vh;
+}
+
 .content{
     margin-left: -0.5vw;
 }
 .collapsible{
-    max-height: 4vh;
+    height: 4vh;
     display: none;
     font-size: 2vh;
+    border-width: 0.3vh;
+}
+
+.sent{
+    background: #bdd2e4;
+    border-color: #070750;
+    border-style: solid;
+    border-radius: 1vw;
+    margin: 3vh 12vw;
+    width: 5vw;
 }
 
 @media screen and (max-width: 500px){
@@ -231,6 +248,15 @@ li{
         border-radius: 1vw;
     }
 
+    .inputColum{
+        margin: 0vw;
+        width: 96vw;
+        padding: 0vh 10vw;
+
+    }
+    .sent{
+        width: 20vw;
+    }
 
 }
 

@@ -8,33 +8,23 @@
     <link rel="stylesheet" href="../Styles/MainStyle.css" />
 </head>
 <body>
-    <h1>
-        <a href= "../index.html" style = "color: #071330; text-decoration-line:none;"> Lander Wesenbeek</a>
-        <nav>
-            <ul>
-                <li>
-                    <p class="nav-boxes">
-                    <a href="AboutMe.html" style = "color: #071330;"> - AboutMe</a>
-                    </p>
-                </li>
-                <li>
-                    <p class="nav-boxes">
-                    <a href="Portfolio.html" style = "color: #071330;"> - Porfolio</a>
-                    </p>
-                </li>
-                <li>
-                    <p class="nav-boxes">
-                    <a href="WerkPlekken.html" style = "color: #071330;"> - WerkPlekken</a>
-                    </p>
-                </li>
-                <li>
-                    <p class="nav-boxes">
-                    <a href="Contacteren.html" style = "color: #071330;"> - Contacteren</a>
-                    </p>
-                </li>
-            </ul>
-        </nav>
-    </h1>
+    <nav>
+        <a href= "../index.html" style = "color: #071330; text-decoration-line:none;"> <h1>Lander Wesenbeek</h1></a>
+
+        <button type="button" class="collapsible">Open Navigation</button>
+
+        <div class="content">
+
+            <a href="../SubSites/AboutMe.html" class="nav-boxes"> -AboutMe</a>
+
+            <a href="../SubSites/Portfolio.html" class="nav-boxes"> -Porfolio</a>
+
+            <a href="../SubSites/WerkPlekken.html" class="nav-boxes"> -WerkPlekken</a>
+
+            <a href="../SubSites/Contacteren.html" class="nav-boxes"> -Contacteren</a>
+
+        </div>
+    </nav>
 
     <main role="main">
 
@@ -42,36 +32,38 @@
             <h2>
                 Portfolio
             </h2>
-            <aside class="float-class">
+
+            <div class="main-section colum1">
+                <p class="main-border main-text-style">
+                    Ik ben een persoon dat veel probeert maar weinig afmaakt<br />
+                    en ook te gemakkelijk te groot droomt.<br />
+                    Het is iets waar ik aan werk en beter in word. <br />
+                    <br />
+                    Dus ik heb zo goed als geen projecten afgewerkt om te laten zien.<br />
+                    Sorry daarvoor.<br />
+                    <br />
+                    Maar ik heb hier wel 2 games gemaakt voor een gamejam.<br />
+                    <a href="https://adhesive20.itch.io/" style="text-decoration-line:underline;"> https://adhesive20.itch.io/ </a> <br />
+
+                </p>
+
+                <p class="main-border main-text-style" >
+                    Mijn CV (<a href = "../Docs/CV.pdf" download> download CV </a>)
+                </p>
+            </div>
+            <aside class="colum2">
                 <img src="../Pictures/SkyRestaurant.PNG" alt="angle" width="250px" />
-                <p class="main-section main-text-style" style = "width: 250px; height: 100;">
+                <p class="main-border main-text-style">
                     -SkyRastaurent-
                 </p>
             </aside>
-            <aside class="float-class" style="margin-right:20px ;">
+            <aside class="colum2">
                 <img src="../Pictures/HumanLaucnher.PNG" alt="angle" width="250px" />
-                <p class="main-section main-text-style" style = "width: 250px; height: 80;">
+                <p class="main-border main-text-style" >
                     -HumanLauncher-
                 </p>
-            </aside> 
-    
-            <p class="main-section main-text-style" style = "height: 440px;">
-                Ik ben een persoon dat veel probeert maar weinig afmaakt<br />
-                en ook te gemakkelijk te groot droomt.<br />
-                Het is iets waar ik aan werk en beter in word. <br />
-                <br />
-                Dus ik heb zo goed als geen projecten afgewerkt om te laten zien.<br />
-                Sorry daarvoor.<br />
-                <br />
-                Maar ik heb hier wel 2 games gemaakt voor een gamejam.<br />
-                <a href="https://adhesive20.itch.io/" style="text-decoration-line:underline;"> https://adhesive20.itch.io/ </a> <br />
-                
-            </p>
+            </aside>
 
-            <p class="main-section main-text-style" style = "height: 50px; padding: 10px; width: 250px;" >
-                Mijn CV (<a href = "../Docs/CV.pdf" download> download CV </a>)
-            </p>
-    
         </section>
 
         <footer>
@@ -80,9 +72,21 @@
             contact: r0781198@student.thomasmore.be
         </footer>
     
-    </main> 
+    </main>
 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
 
+        coll[0].addEventListener("click", function() {
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+
+    </script>
 </body>
 
 
