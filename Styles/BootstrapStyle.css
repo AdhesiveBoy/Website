@@ -44,17 +44,24 @@ p{
     border-color: #0069bf;
     border-width: 0.3vh;
     border-radius: 1vh;
+    background: #bdd2e4;
+}
+
+.carouselImage{
+    max-height: 45vh;
+
 }
 
 .carouselText{
 
     font-size: 3vh;
-
+    padding: 3vh;
     background: #bdd2e4;
 
     border-style: solid;
     border-color: #070750;
     border-width: 0.3vh 0vh 0vh 0vh;
+
 }
 
 .mainTextStyle{
