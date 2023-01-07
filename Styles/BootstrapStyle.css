@@ -1,0 +1,68 @@
+html{
+
+}
+
+h1{
+    text-decoration-line:underline;
+    font-size: 5vh;
+    line-height: 4vh;
+}
+p{
+    font-size: 3vh;
+    line-height: 4vh;
+}
+
+.topRow{
+    min-height: 100vh;
+    width:100vw;
+}
+
+.BackGroundColorOrange{
+    background: #bf5600;
+}
+.BackGroundColorBlue{
+    background: #0069bf;
+}
+
+.mainBackGround{
+    background: #e3ebee;
+}
+
+.BackGroundColorGreen{
+
+}
+.BackGroundColorRed{
+
+}
+
+.carouselVisuals{
+    width: 50vw;
+    max-height: 60vh;
+    margin-left: 20vw;
+
+    border-style: solid;
+    border-color: #0069bf;
+    border-width: 0.3vh;
+    border-radius: 1vh;
+}
+.carouselImage{
+    max-height: 50vh;
+
+}
+
+.carouselText{
+
+    font-size: 3vh;
+
+    background: #bdd2e4;
+
+    border-style: solid;
+    border-color: #070750;
+    border-width: 0.3vh 0vh 0vh 0vh;
+}
+
+.mainTextStyle{
+    text-align: center;
+
+}
+
