@@ -11,7 +11,10 @@ p{
     font-size: 3vh;
     line-height: 4vh;
 }
+nav{
+    background-color: #bf5600;
 
+}
 .topRow{
     min-height: 100vh;
     width:100vw;
@@ -68,4 +71,64 @@ p{
     text-align: center;
 
 }
+a {
+    color: #ffffff;
+    text-decoration-line:none;
+}
 
+
+
+@media screen and (min-width: 500px) {
+    nav{
+        height: 100vh;
+        width: 8vw;
+        position: fixed;
+    }
+    .navHidden{
+        display: block;
+    }
+    .navColapsButton{
+        display: none;
+    }
+    .listItem{
+        width: 20vw;
+        max-height: 45vh;
+    }
+    .listImg{
+        max-width: 20vw;
+    }
+    .listHolder{
+        height:55vh;
+        float: left;
+    }
+
+}
+@media screen and (max-width: 500px){
+    nav > a > img{
+        max-width: 20vw;
+    }
+    .topRow{
+
+    }
+
+    .navHidden{
+        display: none;
+    }
+
+    .navColapsButton{
+        display: block;
+    }
+
+    .logo{
+        margin-right: 60vw;
+    }
+
+    .listItem{
+        width: 60vw;
+        float: left;
+    }
+
+    .listImg{
+        max-width: 60vw;
+    }
+}
